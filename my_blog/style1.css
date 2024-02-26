@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+.navLinks{
+list-style: none;
+margin: 3px 0;
+padding: 0;
+
+}
+.navLinks li{
+float: right;
+margin:5px 5px;
+}
+.navLinks li:hover{
+    background-color: #E89005;
+    font-family: cursive;
+    text-transform: lowercase;
+}
+.navLinks li a{
+display: block;
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 1em;
+padding:5px;
+}
+.active{
+    background-color: #E89005;
+}
+
+.nav-brand{
+    float:right;
+    margin:5px;
+    font-size: 2.5em;
+    color: yellow;
+}
+.barMenu{
+    float: left;
+    display: none;
+}
+.header{ 
+    text-align: center;
+    font-size: 1em;
+    background-color: none;
+    color: white;
+position: relative;
+border-top: 70px;
+}
+
+.col{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 400px;
+    text-align: left;
+}
+.col h2{
+    text-align:center;
+    background-color: #000;
+    text-transform: uppercase;
+    color: white;
+}
+.main{
+    background-image: url(images/logo3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+}
+.main::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.footer{
+    padding:0;
+    text-align:center;
+    background-color:#000;
+    color:white;
+    bottom: 0;
+}
+
+@media screen and (max-width:950px){
+    .logo{
+        font-size: 1.6sem;
+    }
+    .navLinks li a{
+        font-size: 1.5em;
+    }
+    .navLinks li{
+        margin: 5px;
+        padding: 0;
+    }
+    .main{
+        background-position-y: center;
+        background-repeat: repeat-y;
+    }
+}
+
+@media screen and (max-width:763px){
+   /* body{
+        background-color:green ;
+    } */
+    .navbar{
+        height: 50px;
+    }
+    .col{
+        width: 100%;
+    }
+    .navLinks li{
+        width: 100%;
+        margin:0 !important;
+        background-color: #000;
+        text-align: center;
+}
+.barMenu{
+    display: inline-block;
+    margin: 10px 15px;
+    font-size:2.2em;
+    cursor: pointer;
+}
+.navLinks{
+    display: none;
+}
+.logo{
+    width: 70%;
+    margin: auto;
+    background-blend-mode: hue;
+}
+.header{
+    position:relative;
+    text-align: center;
+    font-size: 1em;
+    top: 70px;
+    background-color: rgba(0,0 ,0 ,0 );
+    color: white;
+}
+}
